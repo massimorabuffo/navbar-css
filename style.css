@@ -1,0 +1,89 @@
+:root{
+    --background-gray: rgb(74, 74, 74);
+    --disabled-button: rgba(255, 255, 255, 0.5);
+    --grey-buttons: rgba(255, 255, 255, 0.7);
+    --green-button: green;
+}
+
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-gray);
+    overflow: hidden;
+    width: fit-content;
+}
+
+#home-button{
+    text-decoration: none;
+    color: white;
+}
+
+li{
+    float: left;
+}
+
+ul li{
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+#disabled{
+    color: var(--disabled-button);
+}
+
+#linkButton{
+    color: var(--grey-buttons);
+    text-decoration: none;
+}
+
+#search-button {
+    color: var(--green-button);
+    background-color: var(--background-gray);
+    border: 1px solid var(--green-button);
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+
+#search-button:hover{
+    background-color: var(--green-button);
+    color: white;
+}
+
+
+#dropbtn{
+    background-color: var(--background-gray);
+    color: var(--grey-buttons);
+    border: none;
+}
+
+#dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.arrow {
+    border: solid rgba(255, 255, 255, 0.7);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+#drop-content{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
